@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FSR Qualification Card - GALAXY_VX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="wrap">
+      <h1>FSR Qualification Card - <span class="mono">GALAXY_VX</span></h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <form class="card" action="#" method="post">
+      <section class="section">
+        <h2 class="section-title">Basic Information</h2>
+
+        <div class="grid two">
+          <div class="field">
+            <label for="fsrName">FSR Name</label>
+            <input id="fsrName" name="fsrName" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="trainingDate">Training Completion Date</label>
+            <div class="input-icon">
+              <input id="trainingDate" name="trainingDate" type="date" />
+              <span class="icon" aria-hidden="true">📅</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="district">District/Region</label>
+            <input id="district" name="district" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="qualificationDate">Qualification Date</label>
+            <div class="input-icon">
+              <input id="qualificationDate" name="qualificationDate" type="date" />
+              <span class="icon" aria-hidden="true">📅</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="fineprint">
+          Failure to become qualified on the designated product(s) by the Required Qualification Date will result in the technician having to repeat the entire process, starting with the product training class.
+          The supervising qualified person may waive some requirements if appropriate opportunities for performing certain tasks are not presented within a reasonable time frame or there are notable similarities between requirements.
+          To maintain this qualification, you must work on this product line at least once per calendar year.
+        </p>
+
+        <div class="pill-row">
+          <p class="pill-label">This card is used to earn the following product qualifications. Indicate the appropriate product(s):</p>
+          <div class="pill mono">WW_ITB_GALAXY_VX</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Training Tasks <span class="muted">(must be performed with minimal or no guidance)</span></h2>
+        <p class="fineprint">
+          Upon completion of each set of tasks, the supervising qualified person will apply the job number, their initials and date to that task set that the task was observed.
+          If certain tasks do not apply to the product(s), the qualified person will write “N/A” in the Initials/Date field.
+          Please include any relevant information relating to each task set in the appropriate Notes field below.
+        </p>
+
+        <!-- Construction / Design -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Construction / Design</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Identify the GALAXY_VX solution by CTO report*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Identify and understand the battery solution/configuration*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note1">Note</label>
+            <textarea id="note1" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Hazard Recognition / Mitigation -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Hazard Recognition / Mitigation</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Proper use of LOTO procedure according to Schneider Electric Safety Documentation (SE460)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Identify all electrical hazards present within the battery solution (i.e. DC bus bars, voltage potentials)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Perform Arc Flash Calculations and Risk Assessment*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note2">Note</label>
+            <textarea id="note2" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Installation - Single -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Installation - Single</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate proper mechanical assembly (i.e. floor mounting brackets)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Verify proper power wire &amp; breaker sizing and include torque connection checks*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper communication wiring installation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper battery solution installation (i.e. modular, classic, Li-ion)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note3">Note</label>
+            <textarea id="note3" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Installation - Parallel -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Installation - Parallel</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate proper mechanical assembly (i.e. floor mounting brackets)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Verify proper power wire &amp; breaker sizing and include torque connection checks*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper communication wiring (i.e. 10 display/modbus)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper battery solution installation (i.e. modular, classic, Li-ion)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note4">Note</label>
+            <textarea id="note4" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Start-up/Commissioning - Single -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Start-up/Commissioning - Single</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate proper system configuration/personalization*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper start-up procedure per published SE documentation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Reviewed all product applicable FSBs, i.e. Latest Firmware*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper operation in all modes*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Provide customer with operational training upon completion of Start-up*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note5">Note</label>
+            <textarea id="note5" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Start-up/Commissioning - Parallel -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Start-up/Commissioning - Parallel</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate proper system configuration/personalization (i.e. 10 display/modbus)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper start-up procedure per published SE documentation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Reviewed all product applicable FSBs, i.e. Latest Firmware*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper operations in all modes*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Provide customer with operational training upon completion of Start-up*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note6">Note</label>
+            <textarea id="note6" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Preventive Maintenance -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Preventive Maintenance</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate isolation of affected UPS if in parallel or that the customers load has been secured in Maintenance Bypass*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper Preventive Maintenance procedure per published SE documentation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Reviewed all product applicable FSBs, i.e. Latest Firmware*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper operations in all modes*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate that the customer load has been returned to on-line operation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note7">Note</label>
+            <textarea id="note7" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Repair -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Repair</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Demonstrate isolation of affected UPS if in parallel or that the customers load has been secured in Maintenance Bypass*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate retrieval and interpretation of all required logs*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Correctly identify the issue(s) using current technical information/diagrams and/or applicable FSBs*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Remove/replace defective component(s)*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate proper operations in all modes after the repair is complete*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Demonstrate that the customer load has been returned to on-line operation*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note8">Note</label>
+            <textarea id="note8" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Administrative -->
+        <div class="taskset">
+          <div class="taskset-head">
+            <h3>Administrative</h3>
+          </div>
+
+          <div class="taskrow">
+            <p class="task">Download job information for work order from bFS*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Upload all job information according to the attachment matrix to bFS*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Write a thorough and detailed summary report for on-site work using the current report writing tool*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Scan all serial numbers into bFS*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Complete a work risk assessment using the bFS safety application including LOTO*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+          <div class="taskrow">
+            <p class="task">Properly perform parts return in bFS*</p>
+            <input class="wo" type="text" placeholder="Work Order No" />
+          </div>
+
+          <div class="field">
+            <label for="note9">Note</label>
+            <textarea id="note9" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn ghost" onclick="window.print()">Print</button>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrap">
+    </div>
+  </footer>
+</body>
+</html>
