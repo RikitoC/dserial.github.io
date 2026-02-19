@@ -1,0 +1,221 @@
+/* style.css - basic recreation of the PDF's clean form style */
+:root{
+  --green:#24a148;     /* close to the PDF heading green */
+  --green-dark:#1f8a3f;
+  --bg:#f5f7f8;
+  --card:#ffffff;
+  --line:#e5eaee;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --radius:8px;
+  --shadow:0 1px 0 rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.wrap{
+  width:min(1100px, calc(100% - 32px));
+  margin:0 auto;
+}
+
+.page-header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+.page-header h1{
+  margin:0;
+  padding:18px 0;
+  text-align:center;
+  color:var(--green);
+  font-size:18px;
+  font-weight:700;
+}
+
+.mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.card{
+  margin:18px 0 28px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.section{
+  padding:14px 14px 0;
+}
+
+.section-title{
+  margin:0 0 10px;
+  color:var(--green);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+.muted{ color:var(--muted); font-weight:500; }
+
+.grid{
+  display:grid;
+  gap:10px 18px;
+}
+.grid.two{
+  grid-template-columns: 1fr 1fr;
+  align-items:end;
+}
+
+@media (max-width: 760px){
+  .grid.two{ grid-template-columns:1fr; }
+}
+
+.field label{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  margin:0 0 6px;
+}
+
+input[type="text"], input[type="date"], textarea{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:9px 10px;
+  font-size:13px;
+  outline:none;
+  background:#fff;
+}
+textarea{ resize:vertical; }
+
+input:focus, textarea:focus{
+  border-color: rgba(36,161,72,.55);
+  box-shadow: 0 0 0 3px rgba(36,161,72,.12);
+}
+
+.input-icon{
+  position:relative;
+}
+.input-icon .icon{
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:14px;
+  opacity:.55;
+  pointer-events:none;
+}
+
+.fineprint{
+  margin:10px 0 12px;
+  padding:0 2px;
+  font-size:11px;
+  line-height:1.4;
+  color:var(--muted);
+}
+
+.pill-row{
+  border-top:1px solid var(--line);
+  padding-top:10px;
+  margin-top:8px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.pill-label{
+  margin:0;
+  font-size:11px;
+  color:var(--muted);
+}
+.pill{
+  border:1px solid var(--line);
+  background:#fbfcfd;
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:12px;
+}
+
+.taskset{
+  border-top:1px solid var(--line);
+  margin-top:10px;
+  padding-top:10px;
+}
+
+.taskset-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 2px 6px;
+}
+.taskset h3{
+  margin:0;
+  color:var(--green);
+  font-size:12px;
+  font-weight:700;
+}
+
+.taskrow{
+  display:grid;
+  grid-template-columns: 1fr 170px;
+  gap:12px;
+  align-items:center;
+  padding:8px 2px;
+  border-top:1px solid rgba(229,234,238,.55);
+}
+.taskrow:first-of-type{ border-top:none; }
+
+@media (max-width: 760px){
+  .taskrow{ grid-template-columns:1fr; }
+}
+
+.task{
+  margin:0;
+  font-size:12px;
+  line-height:1.35;
+}
+.wo{
+  text-align:center;
+  font-size:12px;
+  padding:8px 10px;
+  border-radius:6px;
+  background:#fff;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  justify-content:flex-end;
+  padding:16px 2px 16px;
+  border-top:1px solid var(--line);
+  margin-top:10px;
+}
+
+.btn{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:8px;
+  padding:10px 12px;
+  font-weight:600;
+  font-size:13px;
+  cursor:pointer;
+}
+.btn.ghost:hover{ border-color:#cfd8df; background:#fbfcfd; }
+.btn.primary{
+  background:var(--green);
+  border-color:var(--green);
+  color:#fff;
+}
+.btn.primary:hover{ background:var(--green-dark); border-color:var(--green-dark); }
+
+.page-footer{
+  padding:14px 0 18px;
+  color:var(--muted);
+  text-align:center;
+}
